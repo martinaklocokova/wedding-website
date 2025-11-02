@@ -222,6 +222,26 @@
 
 
 
+<div id="image-carousel" class="splide" aria-label="Endless slideshow">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="images/1.jpeg"></li>
+      <li class="splide__slide"><img src="images/2.jpeg"></li>
+      <li class="splide__slide"><img src="images/3.jpeg"></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  new Splide('#image-carousel', {
+    type: 'loop',
+    autoplay: true,
+    interval: 3000,
+    pauseOnHover: true,
+  }).mount();
+</script>
+
+
 
 <div class="slider-container fh5co-section-gray">
   <div class="slider-track row">
