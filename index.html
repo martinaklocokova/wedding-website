@@ -86,7 +86,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Nikol &amp; Tomáš</h1>
+							<h1>Tomáš &amp; Nikol</h1>
 							<br>
 							<img src="images/fprint.png" alt="Nikol + Tomáš"> 
 							<h2>25.07.2026</h2>
@@ -155,12 +155,12 @@
 					<h2>Dotazník</h2>
 				</div>
 			</div>
-			<div class="row row-bottom-padded-md">
+			<div class="row text-center">
 				<div>
 					<p>
 						Pre hladký priebeh svadobného dňa Vás prosíme o vyplnenie nášho svadobného dotazníku.
 					</p>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#googleFormModal">
+				<button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#googleFormModal">
 				  Otvoriť formulár
 				</button>
 			</div>	
@@ -176,12 +176,30 @@
 					<h2>O nás</h2>
 				</div>
 			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12 col-md-offset-3 text-center">
-					<p>Nejaký pekný text o budúcich novomanželoch</p>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="animate-box">
+									<h3>Nikol</h3>
+									<div>
+										<p>text o Nikol</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="animate-box">
+									<h3>Tomáš</h3>
+									<div>
+										<p>text o Tomáš</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>	
-			
+			</div>
 		</div>
 	</div>
 
@@ -222,35 +240,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src=images/1.jpeg" alt="Foto 1"></div>
-    <div class="swiper-slide"><img src="images/2.jpeg" alt="Foto 2"></div>
-    <div class="swiper-slide"><img src="images/3.jpeg" alt="Foto 3"></div>
-	<div class="swiper-slide"><img src="images/RS3.jpg" alt="Foto 3"></div>
-	  <div class="swiper-slide"><img src="images/RS2.jpg" alt="Foto 3"></div>
-  </div>
-</div>
-
-
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,             // nekonečné scrollovanie
-    autoplay: {
-      delay: 3000,          // čas medzi snímkami (ms)
-      disableOnInteraction: false
-    },
-    slidesPerView: 3,       // počet viditeľných snímok
-    spaceBetween: 20,       // medzera medzi snímkami
-    breakpoints: {
-      768: { slidesPerView: 4 },
-      1024: { slidesPerView: 5 }
-    }
-  });
-</script>
 
 
 
@@ -378,9 +367,6 @@
 	</div>
 
 		<style>
-			.swiper:hover .swiper-wrapper {
-  animation-play-state: paused;
-}
 			
 .slider-container {
   overflow: hidden;
