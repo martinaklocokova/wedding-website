@@ -25,6 +25,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />	
 	
 	<!-- clock   -->
 	<link rel="stylesheet" href="css/responsive-clock.css">
@@ -222,23 +225,31 @@
 
 
 
-<div id="image-carousel" class="splide" aria-label="Endless slideshow">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide"><img src="images/1.jpeg"></li>
-      <li class="splide__slide"><img src="images/2.jpeg"></li>
-      <li class="splide__slide"><img src="images/3.jpeg"></li>
-    </ul>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src=images/1.jpeg" alt="Foto 1"></div>
+    <div class="swiper-slide"><img src="images/2.jpeg" alt="Foto 2"></div>
+    <div class="swiper-slide"><img src="images/3.jpeg" alt="Foto 3"></div>
+	<div class="swiper-slide"><img src="images/RS3.jpg" alt="Foto 3"></div>
+	  <div class="swiper-slide"><img src="images/RS2.jpg" alt="Foto 3"></div>
   </div>
 </div>
 
+
 <script>
-  new Splide('#image-carousel', {
-    type: 'loop',
-    autoplay: true,
-    interval: 3000,
-    pauseOnHover: true,
-  }).mount();
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,             // nekonečné scrollovanie
+    autoplay: {
+      delay: 3000,          // čas medzi snímkami (ms)
+      disableOnInteraction: false
+    },
+    slidesPerView: 3,       // počet viditeľných snímok
+    spaceBetween: 20,       // medzera medzi snímkami
+    breakpoints: {
+      768: { slidesPerView: 4 },
+      1024: { slidesPerView: 5 }
+    }
+  });
 </script>
 
 
@@ -367,6 +378,10 @@
 	</div>
 
 		<style>
+			.swiper:hover .swiper-wrapper {
+  animation-play-state: paused;
+}
+			
 .slider-container {
   overflow: hidden;
   white-space: nowrap;
@@ -397,6 +412,9 @@
 }
 </style>
 
+		<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
     <!-- clock -->
