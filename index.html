@@ -357,7 +357,11 @@
 
 .slider-track {
   display: inline-block;
-  animation: scroll 60s linear infinite;
+  animation: scroll 300s linear infinite;
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused; /* ⏸️ Zastaví animáciu pri hoveri */
 }
 
 .slider-track img {
