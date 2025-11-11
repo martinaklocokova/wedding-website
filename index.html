@@ -181,8 +181,168 @@
 			</div>
 			<div class="row text-center  row-bottom-padded-md">
 				<div>
-					TODO harmonogram
-			</div>	
+					<style>
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #dee2e6;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  width: 50%;
+  padding: 0 2rem;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  width: 20px;
+  height: 20px;
+  background: #6c757d;
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline-item-left {
+  left: 0;
+}
+.timeline-item-left::before {
+  right: -10px;
+}
+.timeline-item-right {
+  left: 50%;
+}
+.timeline-item-right::before {
+  left: -10px;
+}
+.timeline-card {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.timeline-card h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #343a40;
+}
+.timeline-card p {
+  margin: 0;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 2.5rem;
+  }
+  .timeline-item::before {
+    left: 0;
+  }
+}
+</style>
+
+<div class="container">
+  <h2 class="text-center my-4">🕒 Harmonogram svatebního dne</h2>
+  <ul class="timeline">
+
+    <li class="timeline-item timeline-item-left">
+      <div class="timeline-card">
+        <h5>🏨 Ubytování hostů</h5>
+        <p>24.7.2026 od 16:00 – kontaktní osoby: nevěsta a ženich</p>
+        <p>25.7.2026 od 9:30–10:30 – družička Renča, tel. č.</p>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-right">
+      <div class="timeline-card">
+        <h5>🚗 Příjezd hostů</h5>
+        <p>25.7.2026 od 10:00 – přivítání na místě, občerstvení a milá společnost</p>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-left">
+      <div class="timeline-card">
+        <h5>💍 Obřad</h5>
+        <p>11:07 v Březovém háji</p>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-right">
+      <div class="timeline-card">
+        <h5>🎉 Gratulace a společná fotka</h5>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-left">
+      <div class="timeline-card">
+        <h5>🍽️ Zahájení svatební hostiny</h5>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-right">
+      <div class="timeline-card">
+        <h5>📸 Skupinkové focení</h5>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-left">
+      <div class="timeline-card">
+        <h5>🎂 Krájení svatebního dortu</h5>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-right">
+      <div class="timeline-card">
+        <h5>🎈 Odpolední svatební program</h5>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-left">
+      <div class="timeline-card">
+        <h5>🌅 Zlatá hodinka</h5>
+        <p>Focení novomanželů pri najkrajšom svetle dňa</p>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-right">
+      <div class="timeline-card">
+        <h5>💃 První tanec</h5>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-left">
+      <div class="timeline-card">
+        <h5>🌙 Večerní program</h5>
+        <p>Vykupování nevěstina střevíčku, tombola</p>
+      </div>
+    </li>
+
+    <li class="timeline-item timeline-item-right">
+      <div class="timeline-card">
+        <h5>✨ Prskavky pod hvězdami</h5>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+				</div>	
 			</div>
 		</div>
 	</div>
