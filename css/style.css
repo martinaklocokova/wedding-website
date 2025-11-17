@@ -850,7 +850,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.2;
-  font-family: MonteCarlo;
+  font-family: "The Nautigal", cursive;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -1147,12 +1147,12 @@ form label {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  font-size: 70px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
   color: #646464;
-  font-family: MonteCarlo;
+  font-family: "The Nautigal", cursive;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
