@@ -11,6 +11,141 @@
 * 	Template Style 
 *
 * ======================================================= */
+ /* Kruh s barvou */
+  .color-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin: 0 auto;
+  }
+
+  /* Barevné třídy */
+  .bg-tmavozelena { background-color: #1f4d3a; }  /* tmavá zelená */
+  .bg-kremova     { background-color: #efe6d9; }  /* krémová */
+  .bg-svetlozelena    { background-color: #cfe8cc; }  /* svetlo zelena */
+  .bg-hneda       { background-color: #7b4b2a; }  /* hnědá */
+
+  /* Responsivní velikost (volitelné) */
+  @media (min-width: 576px) {
+    .color-circle { width: 90px; height: 90px; }
+  }
+  @media (min-width: 992px) {
+    .color-circle { width: 100px; height: 100px; }
+  }
+
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #dee2e6;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  width: 50%;
+  padding: 0 2rem;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  width: 20px;
+  height: 20px;
+  background: #6c757d;
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline-item-left {
+  left: 0;
+}
+.timeline-item-left::before {
+  right: -10px;
+}
+.timeline-item-right {
+  left: 50%;
+}
+.timeline-item-right::before {
+  left: -10px;
+}
+.timeline-card {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.timeline-card h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #343a40;
+}
+.timeline-card p {
+  margin: 0;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 2.5rem;
+  }
+  .timeline-item::before {
+    left: 0;
+  }
+}
+
+
+
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+
+.slider-track {
+  display: inline-block;
+  animation: scroll 300s linear infinite;
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused; /* ⏸️ Zastaví animáciu pri hoveri */
+}
+
+.slider-track img {
+  height: 300px;
+  margin: 0;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
