@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-counter,
-#fh5co-event,
+#misto,
 .fh5co-bg {
   background-size: cover;
   background-position: top center;
@@ -491,24 +491,24 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-counter,
-#fh5co-event {
+#misto {
   height: 950px;
   float: left;
 }
 #fh5co-counter .display-t,
 #fh5co-counter .display-tc,
-#fh5co-event .display-t,
-#fh5co-event .display-tc {
+#misto .display-t,
+#misto .display-tc {
   height: 800px;
   display: table;
   width: 100%;
 }
 #fh5co-counter .fh5co-heading h2,
-#fh5co-event .fh5co-heading h2 {
+#misto .fh5co-heading h2 {
   color: #646464;
 }
 #fh5co-counter .fh5co-heading span,
-#fh5co-event .fh5co-heading span {
+#misto .fh5co-heading span {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 13px;
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 600;
 }
 #fh5co-counter .overlay,
-#fh5co-event .overlay {
+#misto .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -526,19 +526,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
-  #fh5co-event {
+  #misto {
     height: inherit;
     padding: 4em 0;
   }
   #fh5co-counter .display-t,
   #fh5co-counter .display-tc,
-  #fh5co-event .display-t,
-  #fh5co-event .display-tc {
+  #misto .display-t,
+  #misto .display-tc {
     height: inherit;
   }
 }
 #fh5co-counter .event-wrap,
-#fh5co-event .event-wrap {
+#misto .event-wrap {
   border: 2px solid rgba(0, 0, 0, 0.5);
   padding: 30px;
   width: 100%;
@@ -550,12 +550,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .event-wrap,
-  #fh5co-event .event-wrap {
+  #misto .event-wrap {
     margin-bottom: 10px;
   }
 }
 #fh5co-counter .event-wrap h3,
-#fh5co-event .event-wrap h3 {
+#misto .event-wrap h3 {
   font-size: 14px;
   color: #000000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -567,20 +567,20 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 25px;
 }
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span,
-#fh5co-event .event-wrap p,
-#fh5co-event .event-wrap span {
+#misto .event-wrap p,
+#misto .event-wrap span {
   display: block;
   color: rgba(0, 0, 0, 0.8);
   font-family: Sofia Sans Condensed;
   font-size: 20px;
 }
 #fh5co-counter .event-wrap i,
-#fh5co-event .event-wrap i {
+#misto .event-wrap i {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 #fh5co-counter .event-wrap .event-col,
-#fh5co-event .event-wrap .event-col {
+#misto .event-wrap .event-col {
   width: 50%;
   float: left;
   margin-bottom: 30px;
@@ -1089,15 +1089,15 @@ form label {
 #fh5co-services,
 #fh5co-started,
 #fh5co-footer,
-#fh5co-event,
+#misto,
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
-#fh5co-us,
-#fh5co-harmonogram,
-#fh5co-gifts,
-#fh5co-dresscode,
-#fh5co-questionaire,
+#o-nas,
+#harmonogram,
+#dary,
+#dresscode,
+#doprava,
 .fh5co-section {
   padding: 4em 0;
   clear: both;
@@ -1107,15 +1107,15 @@ form label {
   #fh5co-services,
   #fh5co-started,
   #fh5co-footer,
-  #fh5co-event,
+  #misto,
   #fh5co-couple-story,
   #fh5co-couple,
   #fh5co-gallery,
-  #fh5co-us,
-  #fh5co-harmonogram,
-  #fh5co-gifts,
-  #fh5co-dresscode,
-  #fh5co-questionaire,
+  #o-nas,
+  #harmonogram,
+  #dary,
+  #dresscode,
+  #doprava,
   .fh5co-section {
     padding: 3em 0;
   }
